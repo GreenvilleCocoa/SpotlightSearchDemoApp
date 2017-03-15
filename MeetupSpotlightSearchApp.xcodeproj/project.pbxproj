@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1389B5651E7791B3008628F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389B5641E7791B3008628F0 /* AppDelegate.swift */; };
+		1389B5671E7791B3008628F0 /* MemberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389B5661E7791B3008628F0 /* MemberTableViewController.swift */; };
+		1389B56C1E7791B3008628F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1389B56B1E7791B3008628F0 /* Assets.xcassets */; };
+		1389B56F1E7791B3008628F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1389B56D1E7791B3008628F0 /* LaunchScreen.storyboard */; };
+		1389B5791E7792F6008628F0 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389B5781E7792F6008628F0 /* Member.swift */; };
+		1389B57B1E77964C008628F0 /* members.json in Resources */ = {isa = PBXBuildFile; fileRef = 1389B57A1E77964C008628F0 /* members.json */; };
+		1389B5801E77979B008628F0 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389B57F1E77979B008628F0 /* SwiftyJSON.swift */; };
+		1389B5831E779847008628F0 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389B5821E779847008628F0 /* JSONHelper.swift */; };
+		1389B5851E779F98008628F0 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389B5841E779F98008628F0 /* MemberTableViewCell.swift */; };
+		1389B5881E77A1AE008628F0 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1389B5871E77A1AE008628F0 /* CoreSpotlight.framework */; };
+		1389B58A1E77A1B5008628F0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1389B5891E77A1B5008628F0 /* MobileCoreServices.framework */; };
+		1389B58C1E77A77F008628F0 /* UIImage+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389B58B1E77A77F008628F0 /* UIImage+Cache.swift */; };
+		1389B58F1E781772008628F0 /* MemberDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389B58E1E781772008628F0 /* MemberDatasource.swift */; };
+		13AF373B1E78B733005A7ABD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF373A1E78B733005A7ABD /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1389B5611E7791B3008628F0 /* MeetupSpotlightSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetupSpotlightSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1389B5641E7791B3008628F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1389B5661E7791B3008628F0 /* MemberTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewController.swift; sourceTree = "<group>"; };
+		1389B56B1E7791B3008628F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1389B56E1E7791B3008628F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1389B5701E7791B3008628F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1389B5781E7792F6008628F0 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		1389B57A1E77964C008628F0 /* members.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = members.json; sourceTree = "<group>"; };
+		1389B57F1E77979B008628F0 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		1389B5821E779847008628F0 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		1389B5841E779F98008628F0 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		1389B5871E77A1AE008628F0 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		1389B5891E77A1B5008628F0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1389B58B1E77A77F008628F0 /* UIImage+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Cache.swift"; sourceTree = "<group>"; };
+		1389B58E1E781772008628F0 /* MemberDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberDatasource.swift; sourceTree = "<group>"; };
+		13AF373A1E78B733005A7ABD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1389B55E1E7791B3008628F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1389B58A1E77A1B5008628F0 /* MobileCoreServices.framework in Frameworks */,
+				1389B5881E77A1AE008628F0 /* CoreSpotlight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1389B5581E7791B3008628F0 = {
+			isa = PBXGroup;
+			children = (
+				1389B5631E7791B3008628F0 /* MeetupSpotlightSearchApp */,
+				1389B5621E7791B3008628F0 /* Products */,
+				1389B5861E77A1AE008628F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1389B5621E7791B3008628F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1389B5611E7791B3008628F0 /* MeetupSpotlightSearchApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1389B5631E7791B3008628F0 /* MeetupSpotlightSearchApp */ = {
+			isa = PBXGroup;
+			children = (
+				1389B5641E7791B3008628F0 /* AppDelegate.swift */,
+				1389B58D1E77A925008628F0 /* Extensions */,
+				1389B5811E7797A1008628F0 /* Frameworks */,
+				1389B57E1E7796F0008628F0 /* Model */,
+				1389B57C1E7796D5008628F0 /* UI */,
+				1389B57D1E7796E4008628F0 /* Supporting */,
+			);
+			path = MeetupSpotlightSearchApp;
+			sourceTree = "<group>";
+		};
+		1389B57C1E7796D5008628F0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1389B5661E7791B3008628F0 /* MemberTableViewController.swift */,
+				1389B5841E779F98008628F0 /* MemberTableViewCell.swift */,
+				13AF373A1E78B733005A7ABD /* DetailViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		1389B57D1E7796E4008628F0 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				1389B56B1E7791B3008628F0 /* Assets.xcassets */,
+				1389B56D1E7791B3008628F0 /* LaunchScreen.storyboard */,
+				1389B5701E7791B3008628F0 /* Info.plist */,
+				1389B5821E779847008628F0 /* JSONHelper.swift */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		1389B57E1E7796F0008628F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1389B5781E7792F6008628F0 /* Member.swift */,
+				1389B58E1E781772008628F0 /* MemberDatasource.swift */,
+				1389B57A1E77964C008628F0 /* members.json */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1389B5811E7797A1008628F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1389B57F1E77979B008628F0 /* SwiftyJSON.swift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1389B5861E77A1AE008628F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1389B5891E77A1B5008628F0 /* MobileCoreServices.framework */,
+				1389B5871E77A1AE008628F0 /* CoreSpotlight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1389B58D1E77A925008628F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1389B58B1E77A77F008628F0 /* UIImage+Cache.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1389B5601E7791B3008628F0 /* MeetupSpotlightSearchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1389B5731E7791B3008628F0 /* Build configuration list for PBXNativeTarget "MeetupSpotlightSearchApp" */;
+			buildPhases = (
+				1389B55D1E7791B3008628F0 /* Sources */,
+				1389B55E1E7791B3008628F0 /* Frameworks */,
+				1389B55F1E7791B3008628F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeetupSpotlightSearchApp;
+			productName = MeetupSpotlightSearchApp;
+			productReference = 1389B5611E7791B3008628F0 /* MeetupSpotlightSearchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1389B5591E7791B3008628F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Coy;
+				TargetAttributes = {
+					1389B5601E7791B3008628F0 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = QA9S72X7QT;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1389B55C1E7791B3008628F0 /* Build configuration list for PBXProject "MeetupSpotlightSearchApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1389B5581E7791B3008628F0;
+			productRefGroup = 1389B5621E7791B3008628F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1389B5601E7791B3008628F0 /* MeetupSpotlightSearchApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1389B55F1E7791B3008628F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1389B57B1E77964C008628F0 /* members.json in Resources */,
+				1389B56F1E7791B3008628F0 /* LaunchScreen.storyboard in Resources */,
+				1389B56C1E7791B3008628F0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1389B55D1E7791B3008628F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AF373B1E78B733005A7ABD /* DetailViewController.swift in Sources */,
+				1389B5671E7791B3008628F0 /* MemberTableViewController.swift in Sources */,
+				1389B5851E779F98008628F0 /* MemberTableViewCell.swift in Sources */,
+				1389B5791E7792F6008628F0 /* Member.swift in Sources */,
+				1389B5651E7791B3008628F0 /* AppDelegate.swift in Sources */,
+				1389B58F1E781772008628F0 /* MemberDatasource.swift in Sources */,
+				1389B5801E77979B008628F0 /* SwiftyJSON.swift in Sources */,
+				1389B58C1E77A77F008628F0 /* UIImage+Cache.swift in Sources */,
+				1389B5831E779847008628F0 /* JSONHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1389B56D1E7791B3008628F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1389B56E1E7791B3008628F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1389B5711E7791B3008628F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1389B5721E7791B3008628F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1389B5741E7791B3008628F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QA9S72X7QT;
+				INFOPLIST_FILE = MeetupSpotlightSearchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.coylums.MeetupSpotlightSearchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1389B5751E7791B3008628F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QA9S72X7QT;
+				INFOPLIST_FILE = MeetupSpotlightSearchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.coylums.MeetupSpotlightSearchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1389B55C1E7791B3008628F0 /* Build configuration list for PBXProject "MeetupSpotlightSearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1389B5711E7791B3008628F0 /* Debug */,
+				1389B5721E7791B3008628F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1389B5731E7791B3008628F0 /* Build configuration list for PBXNativeTarget "MeetupSpotlightSearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1389B5741E7791B3008628F0 /* Debug */,
+				1389B5751E7791B3008628F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1389B5591E7791B3008628F0 /* Project object */;
+}
